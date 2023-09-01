@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter DM Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+     <!-- side bar starts -->
+     <div class="mainsidebar">
+        <div class="sidebar">
+          <i class="fa-brands fa-x-twitter"></i>
+          <!--TWITTER ICON-->
+          <!--NAVIGATION BAR-->
+          <div class="sidebarOption active">
+            <span class="nav-icons"> <i class="fa-solid fa-house-user"></i></span>
+            <h2>Home</h2>
+          </div>
+          <div class="sidebarOption">
+            <span class="nav-icons"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <h2>Explore</h2>
+          </div>
+          <div class="sidebarOption">
+            <span class="nav-icons"><i class="fa-solid fa-bell"></i></span>
+            <h2>Notifications</h2>
+          </div>
+          <div class="sidebarOption">
+            <span class="nav-icons"><i class="fa-regular fa-envelope"></i></span>
+            <h2>Messages</h2>
+          </div>
+          <div class="sidebarOption">
+            <span class="nav-icons"
+              ><i class="fa-regular fa-rectangle-list"></i
+            ></span>
+            <h2>Lists</h2>
+          </div>
+          <div class="sidebarOption">
+            <span class="nav-icons"><i class="fa-regular fa-bookmark"></i></span>
+            <h2>Bookmarks</h2>
+          </div>
+          <div class="sidebarOption">
+            <span class="nav-icons"><i class="fa-solid fa-user-group"></i></span>
+            <h2>Communities</h2>
+          </div>
+          <div class="sidebarOption">
+            <span class="nav-icons"><i class="fa-regular fa-user"></i></span>
+            <h2>Profile</h2>
+          </div>
+          <div class="sidebarOption">
+            <span class="nav-icons"
+              ><i class="fa-regular fa-circle-check"></i
+            ></span>
+            <h2>More</h2>
+          </div>
+          <a href="#"><button class="sidebar__tweet">Post</button></a>
+          <div class="ProfileBox">
+            <div class="My_profile_name" >
+              <img src="images/WhatsApp Image 2023-08-29 at 18.33.36.jpeg" alt="" class="profile_image" />
+              <div class="personal">
+                <div class="user_name">
+                  <div class="user_name_follow">
+                    <h6>Mehak Walia</h6>
+                    <img src="images/verified.png" alt="" />
+                  </div>
+                  <p>@MehakWalia</p>
+                </div>
+                <span class="ellipsisIcon"
+                  ><i class="fa-solid fa-ellipsis" style="color: #ffff"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- side bar ends -->
+    <div class="container">
+        <div class="user-list" style="margin-right: 0;">
+          <div class="names-list">
+            <ul>
+                <li>
+                <div class="heading">
+                    <h2>Messages</h2>
+                    <i class="material-icons settings">settings</i>
+                    <i class="material-icons mail">mail</i>
+                </div>
+                </li>
+                <li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Direct Messages">
+                </div>
+                </li>
+            </ul>
+            <ul>
+                <!-- List of users or contacts -->
+                <li><img src="images/WhatsApp Image 2023-08-21 at 00.33.51.jpeg"><span class="username">Priyanka <span class="sideusername">@priyanka</span><span class="date">•Aug 19</span></span>
+                <br>
+                <span class="userline">Hey! How are you?</span>
+            </li> 
+                <li><img src="images/WhatsApp Image 2023-08-21 at 00.33.52.jpeg"><span class="username">Anushka <span class="sideusername">@anushka</span><span class="date">•Aug 16</span></span>
+                    <br>
+                    <span class="userline">See you soon?</span>
+                </li>
+                <li><img src="images/person-enjoying-warm-nostalgic-sunset.jpg"><span class="username">Sam <span class="sideusername">@sam</span><span class="date">•Aug 14</span></span>
+                    <br>
+                    <span class="userline">Ok,bye!</span>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="message-container">
+            <div class="message-header">
+                <!-- Display the current conversation user -->
+                <img src="images/WhatsApp Image 2023-08-21 at 00.33.51.jpeg">
+                <h2>Priyanka</h2>
+                <i class="material-icons">info</i>
+            </div>
+            <div class="message-list">
+                <!-- Display messages -->
+                <div class="message received">Hello there!</div>
+                <div class="message sent">Hey! How are you?</div>
+            </div>
+            <div class="message-input">
+                <div class="input-icons">
+                <i class="material-icons">image</i>
+                <i class="material-icons">gif_box</i>
+                <i class="material-icons">sentiment_satisfied</i>
+            <!-- </div> -->
+                <input type="text" placeholder="Start a new message">
+                <!-- <div class="send-icons"> -->
+                  <div class="last-div">
+                  <i class="material-icons" id="send-button">send</i>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
